@@ -45,7 +45,12 @@ const onBlurHandleremail = (eve) =>{
     
     if
     (input.value.includes('@')===true &&
-     input.value.includes('.')===true){
+     (input.value.includes('.')===true )&&
+     (input.value.indexOf ('@') > 2  )  &&
+     (input.value.length)-(input.value.indexOf('.')) 
+     
+     )
+     {
         input.nextElementSibling.nextElementSibling.classList.add("d-none")
     
         
